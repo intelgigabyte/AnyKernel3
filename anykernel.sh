@@ -5,7 +5,7 @@
 # begin properties
 properties() { '
 kernel.string=回 Kernel For Realme 5/5i/5s/5NFC
-do.devicecheck=1
+do.devicecheck=0
 do.modules=0
 do.systemless=1
 do.cleanup=1
