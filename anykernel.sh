@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Mafia Kernel For Realme C25/C25s/Narzo 50A
+kernel.string=Mafia Kernel For Redmi 9/Note 9 and 10X 4G
 do.devicecheck=0
 do.modules=0
 do.systemless=1
