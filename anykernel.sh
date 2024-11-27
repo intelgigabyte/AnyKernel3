@@ -38,6 +38,20 @@ patch_vbmeta_flag=auto;
 
 # boot install
 dump_boot; # use split_boot to skip ramdisk unpack, e.g. for devices with init_boot ramdisk
+
+oneui=$(file_getprop /system/build.prop ro.build.version.oneui);
+device=$(file_getprop /system/build.prop ro.product.system.device);
+if [ -n "$oneui" ]; then
+   ui_print "OneUI ROM detected!"
+   patch_cmdline "android.is_aosp" "android.is_aosp=0";
+elif [ $device == "generic" ]; then
+   ui_print "GSI ROM detected!"
+   patch_cmdline "android.is_aosp" "android.is_aosp=0";
+else
+   ui_print "AOSP ROM detected!"
+   patch_cmdline "android.is_aosp" "android.is_aosp=1";
+fi
+
 write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_boot ramdisk
 ## end boot install
 
