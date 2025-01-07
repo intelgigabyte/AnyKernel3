@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Mafia Kernel For Realme C25/C25s/Narzo 50A
+kernel.string=Cartel Kernel by eun0115
 do.devicecheck=0
 do.modules=0
 do.systemless=1
