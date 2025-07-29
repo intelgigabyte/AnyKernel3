@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Cartel Kernel by eun0115
+kernel.string=Kem Kernel by intelgigabyte9299
 do.devicecheck=1
 do.modules=0
 do.systemless=1
@@ -38,16 +38,6 @@ patch_vbmeta_flag=auto;
 
 # boot install
 dump_boot; # use split_boot to skip ramdisk unpack, e.g. for devices with init_boot ramdisk
-
-oneui=$(file_getprop /system/build.prop ro.build.version.oneui);
-if [ -n "$oneui" ]; then
-   ui_print "OneUI detected!"
-   cp -f "$home/OneUI-Image.gz-dtb" "$home/Image.gz-dtb";
-else
-   ui_print "AOSP detected!"
-   cp -f "$home/AOSP-Image.gz-dtb" "$home/Image.gz-dtb";
-fi
-
 write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_boot ramdisk
 ## end boot install
 
