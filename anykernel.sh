@@ -4,13 +4,13 @@
 ### AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=回 Kernel For Redmi Note 10 Pro/Pro Max/12 Pro 4G
+kernel.string=Kernel For a52s
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=
+device.name1=a52s
 device.name2=
 device.name3=
 device.name4=
