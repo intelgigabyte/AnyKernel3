@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Kem Kernel by intelgigabyte9299
+kernel.string=MoonKernel for Galaxy A71 by intelgigabyte9299 (Manh Dung)
 do.devicecheck=1
 do.modules=0
 do.systemless=1
